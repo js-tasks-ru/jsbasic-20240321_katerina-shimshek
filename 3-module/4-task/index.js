@@ -1,4 +1,4 @@
-let result = showSalary(users, age);
+// let result = showSalary(users, age);
 
 function showSalary(users, age) {
   return users
