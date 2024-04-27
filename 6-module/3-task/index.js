@@ -4,7 +4,6 @@ export default class Carousel {
 
   constructor(slides) {
     this.slides = slides;
-
     this.currentSlideNumber = 0;
     this.render();
     this.addEventListeners();
@@ -45,7 +44,7 @@ export default class Carousel {
   }
 
   addEventListeners() {
-    this.elem.onclick = ({target}) => {
+    this.elem.onclick = ({ target }) => {
       let button = target.closest('.carousel__button');
       if (button) {
         let id = target.closest('[data-id]').dataset.id;
@@ -96,5 +95,4 @@ export default class Carousel {
       this.sub('arrow_left').style.display = '';
     }
   }
-
 }
