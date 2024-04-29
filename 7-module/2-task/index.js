@@ -5,6 +5,7 @@ export default class Modal {
     this.render();
 
     this.elem.addEventListener('click', (event) => this.onClick(event));
+<<<<<<< HEAD
   }
 
   render() {
@@ -67,6 +68,8 @@ export default class Modal {
     document.removeEventListener('keydown', this._keydownEventListener);
     document.body.classList.remove('is-modal-open');
     this.elem.remove();
+=======
+>>>>>>> 6e61a5b350b985b4832444da39400829f4195fa8
   }
 
   render() {
